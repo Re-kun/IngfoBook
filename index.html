@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bookself</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<nav>
+		<h1>IngfoBook</h1>
+	</nav>
+</header>
+<main>
+	<section class="inputBuku">
+		<h1>Masukan Buku Baru</h1>
+		<form>
+            <div class="input">
+                <label for="judul">Judul</label>
+        		<input id="judul" type="text" placeholder="Konosuba" required>
+        	</div>
+
+        	<div class="input">
+                <label for="penulis">Penulis</label>
+        		<input id="penulis" type="text" placeholder="Shinigami" required>
+        	</div>
+        	<div class="input">
+                <label for="tahun">Tahun</label>
+        		<input id="tahun" type="text" placeholder="2004" required>
+        	</div>
+        	<div class="input-checkbox">
+        		<input id="dibaca" type="checkbox" placeholder="Harry Potter" >
+                <label for="dibaca">Selesai dibaca</label>
+        	</div>
+        	<div class="button-submit">
+				<button type="submit">Kirim</button>
+        	</div>
+		</form>
+	</section>
+
+	<section class="editBuku">
+			<h1>Edit Data Baru</h1>
+				<form>
+		            <div class="input">
+		                <label for="judul">Judul</label>
+		        		<input id="judul" type="text" placeholder="Konosuba" >
+		        	</div>
+
+		        	<div class="input">
+		                <label for="penulis">Penulis</label>
+		        		<input id="penulis" type="text" placeholder="Shinigami" >
+		        	</div>                
+		        		<label for="tahun">Tahun</label>
+		        		<input id="tahun" type="text" placeholder="2004" >
+		        	</div>
+		        	<div class="input-checkbox">
+		        		<input id="dibaca" type="checkbox" placeholder="Harry Potter"   >
+		                <label for="dibaca">Selesai dibaca</label>
+		        	</div>
+		        	<div class="button-submit button-edit">
+						<button type="button">Kirim</button>
+		        	</div>
+		        	<div class="button-close">
+						<button type="button" onclick="closed()">close</button>
+		        	</div>
+				</form>
+	</section>
+
+	<section class="belum">
+		<h1 class="title">Belum Selesai Di Baca</h1>
+		<ul class="books-list">
+
+		</ul>
+	</section>
+
+	<section class="sudah">
+		<h1 class="title">Sudah Selesai Di Baca</h1>
+		<ul class="books-list">
+
+		</ul>
+	</section>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
