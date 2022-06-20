@@ -1,0 +1,287 @@
+/* global style */
+* {
+	font-family: sans-serif;
+	padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+nav {
+	width: 100%;
+	background-color: #333333;
+	padding: 20px 3rem;
+	color: white;
+	position: fixed;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+main {
+	display: flex;
+	padding-top: 2.5rem;
+	align-items: center;
+}
+
+footer {
+	display: none;
+}
+
+/* input */
+
+.inputContainer {
+	width: 30%;
+	padding: 1.3%;
+	margin-top: 10vh;
+	margin-left: 2rem;
+} 
+
+.inputContainer h1 {
+	text-align: center;
+}
+
+.inputContainer .input , .editBuku .input{
+	margin-top: 30px;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+}
+
+.input input {
+	border: 1px solid #CFCFCF;
+	padding: 2.5%;
+	border-radius: 5px;
+	margin-top: 3px;
+}
+
+.checkbox-submit {
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.checkbox-input {
+	width: 50%;
+}
+
+ button{
+	width: 5rem;
+	height: 4.5vh;
+	font-family: sans-serif;
+	letter-spacing: 1.5px;
+	color: white;
+	border-radius: 5px;
+}
+
+.submit {
+	margin-left: 7.8rem;
+}
+
+.buttonStatus {
+	margin-right: 0.3rem;
+}
+
+.submit, .searchButton, .buttonStatus{
+	background-color: #333333;
+}
+
+.submit:hover, .searchButton:hover, .buttonStatus:hover {
+	background-color: #487be7;
+}
+
+/* books */
+
+.belum, .sudah{
+	margin-left: 2rem;
+	width: 30%;
+	padding: 1.3%;
+	margin-top: 10vh;
+}
+
+.belum .title, .sudah .title{
+	text-align: center;
+}
+
+.books-list {
+	background-color: #FFFFFF;
+	height: 55vh;
+	margin-top: 20px;
+	border-radius: 10px;
+	padding: 0.1px 6% 5% 6%;
+	overflow-y: scroll;
+}
+
+.books-item {
+	background-color: #CFCFCF;
+	list-style: none;
+	padding: 5.5%;
+	border-radius: 10px;
+	margin-top: 1.5rem;
+}
+
+.books-item h1 {
+	color: #1C1C1C;
+}
+
+.books-item p {
+	margin-top: 0.5rem;
+	color: #5F5F5F;
+}
+
+.book-buttons button {
+	height: 3.5vh;
+	color: white;
+	border-radius: 3px;
+	margin-top: 10px;
+	color: white;
+}
+
+/*edit*/
+
+.editt {
+	width: 3.5rem;
+	background-color: #333333;
+
+}
+
+.editt:hover {
+	background-color: #487be7;
+	color: white;
+
+}
+
+.hapus {
+	width: 5rem;
+	margin-left: 5px;
+	background-color: #333333;
+	color: #B0B0B0;
+}
+
+.hapus:hover {
+	background-color: #E74747;
+	color: white;
+}
+
+.editBukuContainer {
+	display: none;
+	flex-direction: column;
+    background-color: rgba(17, 17, 17, 0.76);
+	width: 100%;
+	position: absolute;
+	height:100%;
+	top: 67px;
+	position: fixed;
+	padding: 3.5% 20% 20% 20%; 
+}
+
+.editbuku {
+    background-color: rgba(92, 92, 92, 0.692);
+    border-radius: 1rem;
+    padding: 5%;
+    color: white;
+}
+
+.editbuku h1 {
+	text-align: center;
+}
+
+.editbuku .input {
+	margin-top: 1rem;
+}
+
+.button-edit {
+	background-color: #333333;
+}
+
+.button-edit:hover {
+	background-color: #487be7;
+}
+
+.button-close  {
+	margin-top: 10px;
+	background-color: #333333;
+}
+
+.button-close:hover {
+	background-color: #E74747;
+}
+
+
+.search {
+	margin-top: 2rem;
+}
+
+.search form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.search h1 {
+	margin-bottom: 1.5rem;
+}
+
+.search input {
+	width: 90%;
+	border: 1px solid #CFCFCF;
+	padding: 2.5% 0;
+	border-radius: 5px;
+	margin-right: 0.5rem;
+}
+
+/* responsive */
+
+@media  (max-width: 1100px) {
+	main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer {
+		display: flex;
+		width: 100%;
+		height: 4rem;
+		background-color: #333333;
+		color: white;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.inputContainer,.sudah,.belum {
+		width: 90%;
+	}
+
+	.inputContainer {
+		margin-left: 0;
+	}
+
+	.sudah {
+		margin-bottom: 20vh;
+	}
+
+	.belum, .sudah{
+		margin-left: 0;
+	}
+
+	.search form {
+		align-items: center;
+	}
+
+}
+
+@media (max-width:  600px){
+	.editBukuContainer{
+	padding: 3rem ;
+
+	}
+}
+
+
+@media (max-width:  425px){
+	.editBukuContainer {
+		padding: 2rem;
+	}
+}
